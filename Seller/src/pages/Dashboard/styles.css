@@ -1,0 +1,192 @@
+.seller-container {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 16vh;
+	padding: 0;
+
+	background: rgba(12, 41, 208, 0.75);
+	border-radius: 0;
+}
+
+.navbar .logo {
+	width: 173px;
+  height: 76px;
+  margin: 0 0 0 73px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	width: 100%;
+	height: 100vh;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	background: #F5F5F5;
+
+	width: 300px;
+	height: 86vh;
+}
+
+.user {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+
+	margin: 50px 30px 40px 0;
+}
+
+.username {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	margin-left: 18px;
+}
+
+.username span:nth-child(1) {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.username span:nth-child(2) {
+	font-size: 17px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.username .link {
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+	margin-top: 10px;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.link {
+	color: #41414d;
+	text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+	opacity: 0.8;
+}
+
+.icon {
+	display: flex;
+	align-content: center;
+	align-items: center;
+
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+
+.icon img {
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+}
+
+.icon span {
+	margin-right: 10px;
+}
+
+.icon button {
+	height: auto;
+	width: auto;
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+}
+
+.icon:last-child {
+	margin-right: 10px;
+}
+
+.pedidos {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin-top: 50px;
+}
+
+.pedidos .title {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	margin-left: 50px;
+}
+
+.pedidos h2 {
+	font-size: 40px;
+	margin-right: 20px;
+}
+
+.pedidos span {
+	color: rgba(12, 41, 208, 0.75);
+}
+
+.items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	padding-left: 10px;
+}
+
+.items img {
+	width: 200px;
+	height: 400px;
+	margin-left: 5px;
+}
+
+.items img:first-child {
+	margin: 0;
+}
+
+.items .backNext {
+	width: 43px;
+	height: 43px;
+	margin: 0;
+}
+
+.reputacao {
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	margin-top: 50px;
+}

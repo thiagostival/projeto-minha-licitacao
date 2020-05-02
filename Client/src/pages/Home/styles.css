@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@400;500;700&display=swap');
+
+.home-container {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 0;
+  background: rgba(12, 41, 208, 0.75);
+}
+
+.navbar .logo {
+	width: 173px;
+  height: 76px;
+  margin: 0 0 0 73px;
+}
+
+.navbar .botoes {
+  display: flex;
+  align-items: center;
+  margin: 0 73px;
+}
+
+.navbar .botoes button:nth-child(1) {
+  height: 58px;
+	width: 180px;
+  margin-right: 20px;
+  
+	background: #F7BC1C;
+
+}
+
+.navbar .botoes button:nth-child(2) {
+  height: 58px;
+	width: 200px;
+
+  border: 1px solid #ffffff;
+  background-color: transparent;
+	color: #FFFFFF;
+}
+
+#conteudo {
+	display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.home-bg {
+  height: 600px;
+  margin: 0 30px;
+}
+
+#mensagem {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  margin: 30px 0 0 50px;
+}
+
+#slogan {
+	width: auto;
+  margin-bottom: 30px;
+
+  font: bold 70px Solway, sans-serif;
+	line-height: 70px;
+	text-align: center;
+	color: rgba(12, 41, 208, 0.75);
+}
+
+#titulo {
+  width: 508px;
+  margin-bottom: 30px;
+
+  text-align: center;
+  font: 500 30px Solway, sans-serif;
+	line-height: 38px;
+
+}
+
+#vantagens {
+	display: flex;
+  flex-direction: column;
+
+  width: 600px;
+
+  font: 400 18px Solway, sans-serif;
+	line-height: 22px;
+}
+
+#text {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.check {
+  margin-right: 10px;
+}
+
+#vantagens button {
+  font-size: 25px;
+  border-color: transparent;
+	background: #F7BC1C;
+}
+
+
+@media (max-width: 1240px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    background: rgba(12, 41, 208, 0.75);
+  }
+
+  .navbar .logo {
+    width: 120px;
+    height: 70px;
+    margin: auto 30px;
+  }
+
+  .navbar .botoes {
+    margin: 0 30px;
+  }
+
+  .navbar .botoes button:nth-child(1) {
+    width: 140px;
+    height: 40px;
+    
+    background: #F7BC1C;
+  }
+
+  .navbar .botoes button:nth-child(2) {
+    width: 130px;
+    height: 40px;
+
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+
+  #conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .home-bg {
+    width: auto;
+    height: 500px;
+    margin: 0 30px;
+  }
+  
+  #mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin: 30px auto ;
+  }
+
+  #slogan {
+    width: auto;
+    margin-bottom: 30px;
+  
+    font: bold 50px Solway, sans-serif;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(12, 41, 208, 0.75);
+  }
+  
+  #titulo {
+    width: 400px;
+  
+    text-align: center;
+    font: 500 20px Solway, sans-serif;
+    line-height: 25px;
+  }
+  
+  #vantagens {
+    display: flex;
+    flex-direction: column;
+  
+    width: 450px;
+  
+    font: 400 16px Solway, sans-serif;
+    line-height: 22px;
+  }
+  
+}
