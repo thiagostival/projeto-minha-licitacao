@@ -8,9 +8,15 @@ import logoImg from '../../assets/logo.svg';
 import iconPerfil from '../../assets/perfil.svg';
 import iconPedidos from '../../assets/pedidos.svg';
 import iconConfigs from '../../assets/configs.svg';
-import dados from './assets/dados.svg';
+import buttonNext from '../../assets/button-arrow-next.svg';
+import buttonBack from '../../assets/button-arrow-back.svg';
 
-export default function ClientArea() {
+import order1 from './assets/order1.svg';
+import order2 from './assets/order2.svg';
+import order3 from './assets/order3.svg';
+import order4 from './assets/order4.svg';
+
+export default function Orders() {
   const [search, setSearch] = useState('');
   const history = useHistory();
 
@@ -20,19 +26,19 @@ export default function ClientArea() {
     try{
       localStorage.setItem('search', search);
 
-      history.push('/dashboard/search');
+      document.location.reload(true);
     } catch (err) {
       alert('Falha na Pesquisa! Tente Novamente!');
     }
   }
 
   return (
-    <div className="client-container" >
+    <div className="orders-container" >
 
       <header className="navbar">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -41,11 +47,11 @@ export default function ClientArea() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>
@@ -56,9 +62,8 @@ export default function ClientArea() {
         </div>
       </header>
 
-      <div className="search">
-        <h1>O que você está buscando hoje?</h1>
-        <form onSubmit={handleSearch}>
+      <div className="search form bg">
+      <form onSubmit={handleSearch}>
           <input 
             placeholder="Pesquisar" 
             value={search}
@@ -69,8 +74,21 @@ export default function ClientArea() {
         </form>
       </div>
 
-      <img className="dados" src={dados} alt="Passo a passo"/>
+      <div className="pedidos">
+          <div className="title">
+            <h2>Pedidos Realizados</h2>
+          </div>
+          <div className="items">
+            <Link className="link"><img className="backNext" src={buttonBack} alt="back"/> </Link>
 
+            <Link className="link" to="/dashboard/orders/offers"><img src={order1} alt="order01"/></Link>
+            <Link className="link" to="/dashboard/orders/offers"><img src={order2} alt="order02"/></Link>
+            <Link className="link" to="/dashboard/orders/offers"><img src={order3} alt="order03"/></Link>
+            <Link className="link" to="/dashboard/orders/offers"><img src={order4} alt="order04"/></Link>
+
+            <Link className="link"><img className="backNext" src={buttonNext} alt="next"/> </Link>
+          </div>
+        </div>
     </div>
   );
 }

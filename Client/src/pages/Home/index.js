@@ -34,7 +34,7 @@ export default function Home(){
               <img className="check" src={checkImg} alt="Check" />
               Ao invés de ficar buscando ofertas na internet nossos vendedores levam a proposta até você de forma personalizada que atenda a sua demanda.
             </div>
-            <div><button className="button">Quero compar na Olist</button></div>
+            <div><button className="button">Quero comprar na Olist</button></div>
           </div>
         </div>
         <img className="home-bg" src={contractImg} alt="Contract" />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory  } from 'react-router-dom';
-import { FiStar, FiArrowDown, FiSearch } from 'react-icons/fi';
+import { FiStar, FiArrowDown, FiSearch, FiLogOut } from 'react-icons/fi';
 
 import './styles.css';
 
@@ -29,6 +29,7 @@ export default function Search() {
     e.preventDefault();
 
     try{
+      history.push('/dashboard/search/abstract');
 
     } catch (err) {
       alert('Falha no envio! Tente Novamente!');
@@ -57,6 +58,10 @@ export default function Search() {
           <Link className="link" to="/dashboard/search">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
+          </Link>
+          <Link className="link" to="/">
+            <FiLogOut size="16" color="#000000" />
+            <span>Sair</span>
           </Link>
         </div>
       </header>
@@ -93,16 +98,16 @@ export default function Search() {
           <div className="items">
             <span>Smart TV?</span>
             <div className="radio">
-              <input type="radio" id="sim" name="polegadas" value="sim"/> Sim
-              <input type="radio" id="nao" name="polegadas" value="nao"/> Não
+              <input type="radio" id="sim" name="smartTv" value="sim"/> Sim
+              <input type="radio" id="nao" name="smartTv" value="nao"/> Não
             </div>
           </div>
 
           <div className="items">
             <span>Conversor Digital?</span>
             <div className="radio">
-              <input type="radio" id="sim" name="polegadas" value="sim"/> Sim
-              <input type="radio" id="nao" name="polegadas" value="nao"/> Não
+              <input type="radio" id="sim" name="conversor" value="sim"/> Sim
+              <input type="radio" id="nao" name="conversor" value="nao"/> Não
             </div>
           </div>
 

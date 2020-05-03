@@ -12,6 +12,8 @@ import vendas from './assets/vendas.svg';
 import configuracoes from './assets/configuracoes.svg';
 import pedido from './assets/pedido01.svg';
 import reputacao from './assets/reputacao.svg';
+import news from './assets/news.svg';
+import vallet from './assets/vallet.svg';
 import buttonNext from './assets/button-arrow.svg';
 import buttonBack from './assets/button-arrow-opost.svg';
 
@@ -78,9 +80,15 @@ export default function VendedorArea() {
           </div>
         </div>
 
-        <div className="reputacao">
+        <div className="informations">
           <Link className="link">
             <img src={reputacao} alt="reputacao"/>
+          </Link>
+          <Link className="link">
+            <img src={news} alt="news"/>
+          </Link>
+          <Link className="link">
+            <img src={vallet} alt="vallet"/>
           </Link>
         </div>
       </section>

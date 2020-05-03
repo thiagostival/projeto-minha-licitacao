@@ -8,9 +8,10 @@ import logoImg from '../../assets/logo.svg';
 import iconPerfil from '../../assets/perfil.svg';
 import iconPedidos from '../../assets/pedidos.svg';
 import iconConfigs from '../../assets/configs.svg';
-import dados from './assets/dados.svg';
+import bgOrder from './assets/order.svg';
+import orderAbstract from './assets/orderAbstract.svg';
 
-export default function ClientArea() {
+export default function Order() {
   const [search, setSearch] = useState('');
   const history = useHistory();
 
@@ -20,19 +21,19 @@ export default function ClientArea() {
     try{
       localStorage.setItem('search', search);
 
-      history.push('/dashboard/search');
+      document.location.reload(true);
     } catch (err) {
       alert('Falha na Pesquisa! Tente Novamente!');
     }
   }
 
   return (
-    <div className="client-container" >
+    <div className="orderAbstract-container" >
 
       <header className="navbar">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -41,11 +42,11 @@ export default function ClientArea() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/search">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>
@@ -56,9 +57,8 @@ export default function ClientArea() {
         </div>
       </header>
 
-      <div className="search">
-        <h1>O que você está buscando hoje?</h1>
-        <form onSubmit={handleSearch}>
+      <div className="search form bg">
+      <form onSubmit={handleSearch}>
           <input 
             placeholder="Pesquisar" 
             value={search}
@@ -69,7 +69,19 @@ export default function ClientArea() {
         </form>
       </div>
 
-      <img className="dados" src={dados} alt="Passo a passo"/>
+      <div className="order">
+        <div className="abstract">
+          <h1>Demanda enviada com sucesso!</h1>
+          <h3>em pouco tempo receberá propostas de nossos vendedores =)</h3>
+          <Link to="/dashboard/orders">
+            <img src={orderAbstract} alt="abstract Order"/>
+          </Link>
+          <button action="/dashboard/orders">Ver Pedidos</button>
+        </div>
+
+        <img className="bgOrder" src={bgOrder} alt="background"/>
+
+      </div>
 
     </div>
   );
