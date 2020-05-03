@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -14,7 +14,9 @@ export default function Home(){
       <header className="navbar">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="botoes">
-          <button className="button">Área do Cliente</button>
+          <Link to="/dashboard">
+            <button className="button">Área do Cliente</button>
+          </Link>
           <button className="button">Criar Conta</button>	
         </div>
       </header>
