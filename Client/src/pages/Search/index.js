@@ -42,7 +42,7 @@ export default function Search() {
       <header className="navbar background">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="/dashboard">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -51,11 +51,11 @@ export default function Search() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="/dashboard/orders">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>

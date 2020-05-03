@@ -21,7 +21,7 @@ export default function Order() {
     try{
       localStorage.setItem('search', search);
 
-      document.location.reload(true);
+      history.push('/dashboard/search');
     } catch (err) {
       alert('Falha na Pesquisa! Tente Novamente!');
     }
@@ -33,7 +33,7 @@ export default function Order() {
       <header className="navbar">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="/dashboard">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -42,11 +42,11 @@ export default function Order() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="/dashboard/orders">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" to="/dashboard/search">
+          <Link className="link" to="">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>

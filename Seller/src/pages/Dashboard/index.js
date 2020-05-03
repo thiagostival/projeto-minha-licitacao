@@ -6,16 +6,17 @@ import './styles.css';
 
 import logoImg from '../../assets/logo.svg';
 import barMenu from '../../assets/barMenu.svg';
-import resumo from './assets/resumo.svg';
-import clientes from './assets/clientes.svg';
-import vendas from './assets/vendas.svg';
-import configuracoes from './assets/configuracoes.svg';
-import pedido from './assets/pedido01.svg';
 import reputacao from './assets/reputacao.svg';
 import news from './assets/news.svg';
 import vallet from './assets/vallet.svg';
 import buttonNext from './assets/button-arrow.svg';
 import buttonBack from './assets/button-arrow-opost.svg';
+import pedido from './assets/pedido01.svg';
+
+import resumo from '../../assets/resumo.svg';
+import clientes from '../../assets/clientes.svg';
+import vendas from '../../assets/vendas.svg';
+import configuracoes from '../../assets/configuracoes.svg';
 
 export default function VendedorArea() {
   return (
@@ -71,10 +72,10 @@ export default function VendedorArea() {
           <div className="items">
             <Link className="link"><img className="backNext" src={buttonBack} alt="back"/> </Link>
 
-            <Link className="link"><img src={pedido} alt="pedido01"/></Link>
-            <Link className="link"><img src={pedido} alt="pedido01"/></Link>
-            <Link className="link"><img src={pedido} alt="pedido01"/></Link>
-            <Link className="link"><img src={pedido} alt="pedido01"/></Link>
+            <Link className="link" to="/dashboard/offer"><img src={pedido} alt="pedido01"/></Link>
+            <Link className="link" to="/dashboard/offer"><img src={pedido} alt="pedido02"/></Link>
+            <Link className="link" to="/dashboard/offer"><img src={pedido} alt="pedido03"/></Link>
+            <Link className="link" to="/dashboard/offer"><img src={pedido} alt="pedido04"/></Link>
 
             <Link className="link"><img className="backNext" src={buttonNext} alt="next"/> </Link>
           </div>

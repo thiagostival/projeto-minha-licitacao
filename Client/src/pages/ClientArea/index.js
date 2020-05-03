@@ -41,11 +41,11 @@ export default function ClientArea() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/dashboard/orders">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>
