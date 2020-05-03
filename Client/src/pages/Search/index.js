@@ -19,7 +19,7 @@ export default function Search() {
     try{
       localStorage.setItem('search', search);
 
-      history.push('/dashboard/search');
+      document.location.reload(true);
     } catch (err) {
       alert('Falha na Pesquisa! Tente Novamente!');
     }
@@ -38,10 +38,10 @@ export default function Search() {
   return (
     <div className="search-container" >
 
-      <header className="navbar">
+      <header className="navbar background">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link">
+          <Link className="link" to="/dashboard/search">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -50,21 +50,21 @@ export default function Search() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" >
+          <Link className="link" to="/dashboard/search">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" >
+          <Link className="link" to="/dashboard/search">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>
         </div>
       </header>
 
-      <div className="search form">
+      <div className="search form background">
       <form onSubmit={handleSearch}>
           <input 
-            placeholder="Pesquisar" 
+            placeholder={localStorage.getItem('search', search)} 
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
@@ -147,8 +147,7 @@ export default function Search() {
 
           <div className="items">
             <span>Alguma cor específica?</span>
-            <div className="select">
-              <strong>Cor:</strong>
+            <div className="select garantia">
               <select name="hdmi">
                 <option value="preta">Preta</option>
                 <option value="prata">Prata</option>
@@ -161,12 +160,12 @@ export default function Search() {
           <div className="items">
             <span>Prazo de garantia</span>
             <div className="select garantia">
-              <select name="hdmi">
+              <select name="garantia">
                 <option value="padrao">Grátis (Fabricante - 1 ano)</option>
                 <option value="3">Fabricante + 3 meses</option>
                 <option value="6">Fabricante + 6 meses</option>
                 <option value="1Ano">Fabricante + 1 ano</option>
-                <option value="2">Fabricante + 2 anos</option>
+                <option value="2Anos">Fabricante + 2 anos</option>
               </select>
             </div>
           </div>
@@ -179,7 +178,6 @@ export default function Search() {
           </div>
 
           <button className="button" type="submit">Enviar Demanda</button>
-
         </form>
       </section>
 

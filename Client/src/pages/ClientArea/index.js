@@ -32,7 +32,7 @@ export default function ClientArea() {
       <header className="navbar">
         <img className="logo" src={logoImg} alt="Olist"/>
         <div className="perfil">
-          <Link className="link">
+          <Link className="link" to="/dashboard">
             <img src={iconPerfil} alt="icon Perfil"/>
             <div className="dados">
               <span>Bem vinda, Sônia</span>
@@ -41,11 +41,11 @@ export default function ClientArea() {
           </Link>
         </div>
         <div className="buttons">
-          <Link className="link" >
+          <Link className="link" to="/dashboard">
             <img src={iconPedidos} alt="icon Pedidos"/>
             <span>Pedidos</span>
           </Link>
-          <Link className="link" >
+          <Link className="link" to="/dashboard">
             <img src={iconConfigs} alt="icon Configuracoes"/>
             <span>Configurações</span> <FiArrowDown size="15" color="#ffffff"/>
           </Link>
