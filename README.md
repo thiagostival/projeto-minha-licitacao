@@ -26,7 +26,7 @@
 <p> A solução proposta é uma plataforma, que inova o modelo de marketplace atual, pois agora o vendedor vai atrás do cliente. Na plataforma o cliente informa o produto desejado e também informa suas necessidades e observações, através de um formulário onde tem tudo explicado e informado ao usuário o que cada item quer dizer. Quando o formulário é submetido, todos os vendedores daquela categoria, que possuem aquele produto, recebe uma notificação sobre uma nova possibilidade de venda, e assim eles respondem o consumidor com o produto e o preço que é possível fazer, com o vendedor tendo um tempo limite para fazer a proposta, para o consumidor não perder muito tempo. Com isso, consumidor faz menos perguntas, pois ao responder o formulário, saberá aproximadamente o que quer, além de receber ofertas personalizadas. E o vendedor poderá fazer ofertas personalizadas e também programar auto ofertas, para assim diminuir tempo de processamento da oferta.
 </p>
 
-<h2 id="tecnologias" > 🛠 Tecnologias </h2>
+<h2 id="tecnologias" > 👨🏻‍💻 Tecnologias </h2>
 <p> Esse é um MVP, ainda em fase de desenvolvimento, contando com tecnologias iniciais, somente para poder validar a ideia e ter a certeza de que o projeto realmente será viável.
   Nessa sessão possui tecnologias do MVP e também algumas principais tecnologias que serão utilizadas no produto.
   <ul>
