@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
 import contractImg from '../../assets/contract.svg';
 import checkImg from '../../assets/check.svg';
 

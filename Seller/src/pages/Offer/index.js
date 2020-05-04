@@ -145,7 +145,6 @@ export default function Offer() {
               <input 
                 placeholder="Garantia" 
                 type="number"
-                type="number"
                 min="0"
                 value={offer.garantia}
                 onChange={e => setOffer({garantia: e.target.value})}
