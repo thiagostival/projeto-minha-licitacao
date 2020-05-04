@@ -4,7 +4,6 @@ import { FiArrowDownCircle, FiLogOut } from 'react-icons/fi'
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
 import barMenu from '../../assets/barMenu.svg';
 import reputacao from './assets/reputacao.svg';
 import news from './assets/news.svg';
@@ -22,7 +21,7 @@ export default function VendedorArea() {
   return (
     <div className="seller-container" >
       <header className="navbar">
-        <img className="logo" src={logoImg} alt="Olist"/>
+        <h2 className="logo">Proposta Ideal</h2>
       </header>
 
       <section className="content">

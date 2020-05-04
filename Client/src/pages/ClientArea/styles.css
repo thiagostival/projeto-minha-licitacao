@@ -36,8 +36,8 @@ body {
 }
 
 .navbar .logo {
-	width: 130px;
-  height: 50px;
+  font: bold 40px Solway;
+  color:#ffffff;
   margin: 0 0 0 73px;
 }
 

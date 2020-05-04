@@ -4,7 +4,6 @@ import { FiStar, FiArrowDown, FiSearch, FiLogOut } from 'react-icons/fi';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
 import iconPerfil from '../../assets/perfil.svg';
 import iconPedidos from '../../assets/pedidos.svg';
 import iconConfigs from '../../assets/configs.svg';
@@ -31,7 +30,7 @@ export default function Order() {
     <div className="orderAbstract-container" >
 
       <header className="navbar">
-        <img className="logo" src={logoImg} alt="Olist"/>
+        <h2 className="logo">Proposta Ideal</h2>
         <div className="perfil">
           <Link className="link" to="/dashboard">
             <img src={iconPerfil} alt="icon Perfil"/>

@@ -12,7 +12,7 @@ export default function Home(){
     <div className="home-container">
 
       <header className="navbar">
-        <img className="logo" src={logoImg} alt="Olist"/>
+        <h2 className="logo">Proposta Ideal</h2>
         <div className="botoes">
           <Link to="/dashboard">
             <button className="button">Área do Cliente</button>

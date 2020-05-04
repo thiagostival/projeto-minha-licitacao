@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
-
 export default function Logon(){
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +12,7 @@ export default function Logon(){
     <div className="logon-container">
       <section className="form">
         <header>
-          <img src={logoImg} alt="Olist"/>
+          <h2 className="logo">Proposta Ideal</h2>
         </header>
 
         <form action="/dashboard" >
