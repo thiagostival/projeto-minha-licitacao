@@ -75,7 +75,9 @@ export default function Order() {
           <Link to="/dashboard/orders">
             <img src={orderAbstract} alt="abstract Order"/>
           </Link>
-          <button action="/dashboard/orders">Ver Pedidos</button>
+          <Link to="/dashboard/orders">
+            <button>Ver Pedidos</button>
+          </Link>
         </div>
 
         <img className="bgOrder" src={bgOrder} alt="background"/>
