@@ -23,7 +23,7 @@
 </p>
 
 <h2 id="solucao"> 🛠 Solução</h2>
-<p> A solução proposta é uma plataforma, que inova o modelo de marketplace atual, pois agora o vendedor vai atrás do cliente. Na plataforma o cliente informa o produto desejado e também informa suas necessidades e observações, através de um formulário específico para cada tipo/categoria de produto onde tem tudo explicado e informado ao usuário o que cada item quer dizer. Quando o formulário é submetido, todos os vendedores daquela categoria, que possuem aquele produto, recebem uma notificação sobre uma nova possibilidade de venda, e assim eles respondem o consumidor com o produto e o preço que é possível fazer, com o vendedor tendo um tempo limite para fazer a proposta, para o consumidor não perder muito tempo. Com isso, consumidor faz menos perguntas, pois ao responder o formulário, saberá exatamente o que quer, além de receber ofertas personalizadas. E o vendedor poderá fazer ofertas personalizadas, tendo a possiblidade de negociar para conquistar a venda.
+<p> A solução proposta é uma plataforma, que inova o modelo de marketplace atual, pois agora o vendedor vai atrás do cliente. Na plataforma o cliente informa o produto desejado e também informa suas necessidades e observações, através de um formulário específico para cada tipo/categoria de produto onde tem tudo explicado e informado ao usuário o que cada item quer dizer. Quando o formulário é submetido, todos os vendedores daquela categoria, que possuem aquele produto, recebem uma notificação sobre uma nova possibilidade de venda, e assim eles respondem o consumidor com o produto e o preço que é possível fazer, com o vendedor tendo um tempo limite para fazer a proposta, para o consumidor não perder muito tempo. Com isso, consumidor faz menos perguntas, pois ao responder o formulário, saberá exatamente o que quer, além de receber ofertas personalizadas. E o vendedor poderá fazer ofertas personalizadas, tendo a possibilidade de negociar para conquistar a venda.
 </p>
 <p>
   <a href="https://youtu.be/RIV95sjwULQ" target="blank">
@@ -31,7 +31,7 @@
     Pitch Proposta Ideal
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://drive.google.com/file/d/1ra1jwg3aeqog8TpB9Ixyoc4lBb2FtixK/view?usp=sharing" target="blank">
+  <a href="https://drive.google.com/open?id=1IISEi84WTln9CXIvZBVtMIOr0K5RCNjm" target="blank">
     <img align="center" src="https://image.flaticon.com/icons/png/512/785/785758.png" alt="apresentação" width="50px" height="50px" >
     Apresentação
   </a>
