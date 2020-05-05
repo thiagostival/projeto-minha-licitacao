@@ -26,9 +26,14 @@
 <p> A solução proposta é uma plataforma, que inova o modelo de marketplace atual, pois agora o vendedor vai atrás do cliente. Na plataforma o cliente informa o produto desejado e também informa suas necessidades e observações, através de um formulário onde tem tudo explicado e informado ao usuário o que cada item quer dizer. Quando o formulário é submetido, todos os vendedores daquela categoria, que possuem aquele produto, recebe uma notificação sobre uma nova possibilidade de venda, e assim eles respondem o consumidor com o produto e o preço que é possível fazer, com o vendedor tendo um tempo limite para fazer a proposta, para o consumidor não perder muito tempo. Com isso, consumidor faz menos perguntas, pois ao responder o formulário, saberá aproximadamente o que quer, além de receber ofertas personalizadas. E o vendedor poderá fazer ofertas personalizadas e também programar auto ofertas, para assim diminuir tempo de processamento da oferta.
 </p>
 <p>
-  <a href="https://youtu.be/0AVP-EYQEOk" target="blank">
+  <a href="https://youtu.be/RIV95sjwULQ" target="blank">
     <img align="center" src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721679-youtube_108064.png" alt="youtube" width="50px" height="50px">
     Pitch Proposta Ideal
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://drive.google.com/file/d/15l7aM_g8APmNLBgfP36377PDtmIvNz3z/view?usp=sharing" target="blank">
+    <img align="center" src="https://image.flaticon.com/icons/png/512/785/785758.png" alt="apresentação" width="50px" height="50px" >
+    Apresentação
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.figma.com/file/mEzbL0noD7Bc72vkFHlXHA/UX?node-id=152%3A255" target="blank">
